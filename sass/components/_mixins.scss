@@ -21,7 +21,7 @@
   letter-spacing: $_ls;
 }
   
-@mixin auth-nav__link ($_fw, $_fs, $_lh, $_ls) {
+@mixin nav-link ($_fw, $_fs, $_lh, $_ls) {
   font-weight: $_fw;
   font-size: $_fs;
   line-height: $_lh;

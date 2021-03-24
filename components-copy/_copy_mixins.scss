@@ -12,11 +12,17 @@
   overflow: hidden;
 }
 
-@mixin logo () {
+@mixin logo($_fw, $_fs, $_lh, $_ls) {
   font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  margin-right: 93px;
-  letter-spacing: 0.03em;
+  font-weight: $_fw;
+  font-size: $_fs;
+  line-height: $_lh;
+  letter-spacing: $_ls;
+}
+
+@mixin auth-nav__link ($_fw, $_fs, $_lh, $_ls) {
+  font-weight: $_fw;
+  font-size: $_fs;
+  line-height: $_lh;
+  letter-spacing: $_ls;
 }

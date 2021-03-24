@@ -445,12 +445,21 @@ h3 {
   }
 }
 
+.header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 767px) {
+  .header__nav {
+    height: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .header__nav {
-    max-width: 1199px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    height: 80px;
   }
 }
 
@@ -519,6 +528,9 @@ h3 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -563,6 +575,7 @@ h3 {
 @media screen and (min-width: 1200px) {
   .auth-nav__link--first {
     margin-right: 30px;
+    margin-bottom: 0;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.142;

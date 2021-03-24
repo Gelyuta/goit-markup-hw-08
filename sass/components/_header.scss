@@ -82,10 +82,13 @@
 }
     
 .header__nav {
+  display: flex;
+
+  @media screen and (max-width: 767px){
+    height: 60px;
+  }
   @media screen and (min-width: 768px){
-    max-width: 1199px;
-    display: flex;
-     
+    height: 80px;
   }
 }
   
@@ -133,6 +136,8 @@
   @media screen and (min-width: 1200px){
     display: flex;
     flex-direction: row;
+    align-items: center
+    
     // padding-top: 32px;
     // padding-bottom: 32px;
     
@@ -167,6 +172,7 @@
 
   @media screen and (min-width: 1200px){
     margin-right: 30px;
+    margin-bottom: 0;
     @include nav-link(500, 14px, 1.142, 0.02em);
     
   

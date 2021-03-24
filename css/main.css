@@ -287,7 +287,6 @@ html {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #cce4dd;
 }
 
 @media screen and (min-width: 480px) {
@@ -611,12 +610,23 @@ h3 {
   outline: none;
 }
 
+.hero {
+  text-align: center;
+  outline: solid tomato;
+  background-color: turquoise;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
-    max-height: 600px;
-    text-align: center;
     padding-top: 200px;
+    padding-bottom: 200px;
   }
 }
 
@@ -629,7 +639,6 @@ h3 {
   color: white;
   background-color: #2196f3;
   border: none;
-  font-size: 16px;
   letter-spacing: 0.06em;
   font-weight: 700;
   line-height: 1.875;
@@ -638,12 +647,27 @@ h3 {
 }
 
 .hero__title {
-  color: white;
+  display: block;
   margin-top: 0;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  letter-spacing: 0.06em;
   margin-bottom: 30px;
+  color: white;
+}
+
+@media screen and (max-width: 1199px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.615;
+    letter-spacing: 0.06em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.363;
+    letter-spacing: 0.06em;
+  }
 }
 /*# sourceMappingURL=main.css.map */

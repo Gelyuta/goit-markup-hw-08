@@ -21,7 +21,7 @@
   letter-spacing: $_ls;
 }
   
-@mixin link-text ($_fw, $_fs, $_lh, $_ls) {
+@mixin text ($_fw, $_fs, $_lh, $_ls) {
   font-weight: $_fw;
   font-size: $_fs;
   line-height: $_lh;

@@ -5,7 +5,7 @@
   background-color: turquoise;
   //   max-width: 1600px;
   //   max-height: 600px;
-  @media screen and (min-width: $tablet){
+  @media screen and (max-width: 1199px){
     padding-top: 118px;
     padding-bottom: 118px;
   }

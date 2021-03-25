@@ -289,7 +289,7 @@ html {
   margin-right: auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
     width: 480px;
   }
@@ -529,18 +529,18 @@ h3 {
   }
 }
 
-.auth-nav__icons {
+.auth-nav__icon {
   fill: currentColor;
 }
 
 @media screen and (min-width: 768px) {
-  .auth-nav__icons {
+  .auth-nav__icon {
     margin-right: 8px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .auth-nav__icons {
+  .auth-nav__icon {
     margin-right: 10px;
   }
 }

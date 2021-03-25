@@ -2,35 +2,71 @@
 .hero {
   text-align: center;
   outline: solid tomato;
-  background-color: turquoise;
-  //   max-width: 1600px;
-  //   max-height: 600px;
-  @media screen and (max-width: 1199px){
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
-  @media screen and (min-width: $desktop){
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
+  // background-color: turquoise;
+  
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+@media screen and (min-width: $desktop){
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
+
     
-// .hero__bcg {
-//   height: 600px;
-//   max-width: 1600px;
-//   margin: 0 auto;
-//   background-color: $background;
-//   background-image: linear-gradient(
-//           to right,
-//           rgba(47, 48, 58, 0.4),
-//           rgba(47, 48, 58, 0.4)
-//         ),
-//     url(../img/Img-hero.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: cover;
-// }
+.hero__bcg {
+ 
+  margin: 0 auto;
+  background-color: $background;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+  );
+  
+  @media screen and (max-width: $tablet){
+    width: 480px;
+    height: 400px;
+    background-image: url(/img/hero-mobile_img.jpg);
+    background-size: 480px 400px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/img/hero-mobile_img@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: $tablet){
+    width: 768px;
+    height: 400px;
+    background-image: url(/img/hero-tablet_img.jpg);
+    background-size: 768px 400px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/img/hero-tablet_img@2x.jpg);
+    }
+  }
+  
+  @media screen and (min-width: $desktop){
+    width: 1600px;
+    height: 600px;
+    background-image: url(/img/hero-decktop.jpg);
+    background-size: 1600px 600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/img/hero-decktop_Img@2x.jpg);
+    }
+  }
+}
     
 .hero__btn {
   display: inline-block;

@@ -499,7 +499,7 @@ h3 {
   color: black;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .auth-nav {
     display: none;
   }
@@ -607,7 +607,7 @@ h3 {
   outline: none;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .auth-nav__link {
     font-weight: 500;
     font-size: 12px;
@@ -634,7 +634,6 @@ h3 {
 
 .hero {
   text-align: center;
-  outline: solid tomato;
   padding-top: 118px;
   padding-bottom: 118px;
 }
@@ -656,10 +655,9 @@ h3 {
 
 @media screen and (max-width: 768px) {
   .hero__bcg {
-    width: 480px;
-    height: 400px;
+    max-width: 480px;
+    min-height: 400px;
     background-image: url(/img/hero-mobile_img.jpg);
-    background-size: 480px 400px;
   }
 }
 
@@ -671,10 +669,9 @@ h3 {
 
 @media screen and (min-width: 768px) {
   .hero__bcg {
-    width: 768px;
-    height: 400px;
+    max-width: 768px;
+    max-height: 400px;
     background-image: url(/img/hero-tablet_img.jpg);
-    background-size: 768px 400px;
   }
 }
 
@@ -686,8 +683,8 @@ h3 {
 
 @media screen and (min-width: 1200px) {
   .hero__bcg {
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
+    min-height: 600px;
     background-image: url(/img/hero-decktop.jpg);
     background-size: 1600px 600px;
   }

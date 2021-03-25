@@ -108,7 +108,7 @@
 }
     
 .auth-nav {
-  @media screen and (max-width: 767px){
+  @media screen and (max-width: $tablet){
     display: none;
   }
 
@@ -194,7 +194,7 @@
 }
   
 .auth-nav__link{
-  @media screen and (max-width: 767px){
+  @media screen and (max-width:$tablet){
     @include text(500, 12px, 1.166, 0.02em);
   }
 

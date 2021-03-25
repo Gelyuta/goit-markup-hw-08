@@ -1,7 +1,6 @@
   
 .hero {
   text-align: center;
-  outline: solid tomato;
   // background-color: turquoise;
   
   padding-top: 118px;
@@ -12,10 +11,7 @@
   padding-bottom: 200px;
 }
 
-
-    
 .hero__bcg {
- 
   margin: 0 auto;
   background-color: $background;
   background-repeat: no-repeat;
@@ -29,11 +25,10 @@
   );
   
   @media screen and (max-width: $tablet){
-    width: 480px;
-    height: 400px;
+    max-width: 480px;
+    min-height: 400px;
     background-image: url(/img/hero-mobile_img.jpg);
-    background-size: 480px 400px;
-
+    
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -42,10 +37,9 @@
   }
 
   @media screen and (min-width: $tablet){
-    width: 768px;
-    height: 400px;
+    max-width: 768px;
+    max-height: 400px;
     background-image: url(/img/hero-tablet_img.jpg);
-    background-size: 768px 400px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
@@ -55,8 +49,8 @@
   }
   
   @media screen and (min-width: $desktop){
-    width: 1600px;
-    height: 600px;
+    max-width: 1600px;
+    min-height: 600px;
     background-image: url(/img/hero-decktop.jpg);
     background-size: 1600px 600px;
 

@@ -43,21 +43,18 @@
                     +38 096 111 11 11</a>
                 </li>
        </ul>
+       <!-- Открытие бургер-меню-->
+       <button
+       class="menu-toggle js-open-menu"
+       aria-expanded="false"
+       aria-controls="mobile-menu">
+       <svg width="40" height="40">
+        <use href="./img/sprite.svg#icon-menu"> </use>
+       </svg>
+      </button>
         </div>
 
-       <!--Бургер-меню-->
-
-       <!-- Открытие -->
-        <button
-        class="menu-toggle js-open-menu"
-        aria-expanded="false"
-        aria-controls="mobile-menu">
-        <svg width="40" height="40">
-         <use href="./img/sprite.svg#icon-menu"> </use>
-        </svg>
-       </button>
-
-       <!-- Закрытие -->
+       <!-- Закрытие  бургер-меню-->
        <div class="menu-container js-menu-container" id="mobile-menu">
        <button
        class="menu-toggle js-open-menu"
@@ -67,7 +64,8 @@
         <use href="./img/sprite.svg#icon-close-modal"> </use>
        </svg>
      </button>
-  
+
+       <!-- Меню -->
      <ul class="menu">
        <li><a href="#" class="menu__link">Студия</a></li>
        <li><a href="#" class="menu__link">Портфолио</a></li>

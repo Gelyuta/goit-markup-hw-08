@@ -107,19 +107,13 @@
 
 .menu__social-networks{
   display: flex;
+  padding-bottom: 48px;
 }
 
 .menu__items-link{
   @include text(500, 18px, 1.222, 0.02em);
   color: $text-blue;
 }
-
-// .menu__items-border{
-//   min-height: 22px;
-//   color: $border-input;
-//   margin-left: 10px;
-//   margin-right: 10px;
-// }
 
 .menu__items:not(:first-child){
   border-left: solid 1px $border-input;
@@ -134,7 +128,7 @@
 
 .menu-list{
   
-  height: 796px;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

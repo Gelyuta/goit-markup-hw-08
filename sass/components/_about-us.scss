@@ -33,6 +33,11 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * #{$value-margin});
+  }
+  @media screen and (max-width: $desktop){
+    padding-top: 60px;
+  }
+  @media screen and (min-width: $desktop){
     padding-top: 94px;
   }
 }

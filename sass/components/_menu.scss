@@ -17,6 +17,9 @@
 }
 
 .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   min-height: 40px;
   min-width: 40px;
   display: flex;
@@ -41,4 +44,17 @@
 .menu-toggle:hover,
 .menu-toggle:focus {
   fill: $btn-blue;
+}
+
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }

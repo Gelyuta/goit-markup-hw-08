@@ -760,6 +760,9 @@ h3 {
 }
 
 .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   min-height: 40px;
   min-width: 40px;
   display: -webkit-box;
@@ -789,5 +792,17 @@ h3 {
 .menu-toggle:hover,
 .menu-toggle:focus {
   fill: #2196f3;
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 /*# sourceMappingURL=main.css.map */

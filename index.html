@@ -46,8 +46,8 @@
         </div>
 
        <!--Бургер-меню-->
+
        <!-- Открытие -->
-       <div class="container">
         <button
         class="menu-toggle js-open-menu"
         aria-expanded="false"
@@ -55,51 +55,24 @@
         <svg width="40" height="40">
          <use href="./img/sprite.svg#icon-menu"> </use>
         </svg>
-      </button>
+       </button>
 
-      <ul class="menu">
-        <li><a href="#" class="menu__link">Студия</a></li>
-        <li><a href="#" class="menu__link">Портфолио</a></li>
-        <li><a href="#" class="menu__link">Контакты</a></li>
-      </ul>
-
-      <ul class="menu__nav">    
-        <li class="menu__nav-link"> <a href="mailto:info@devstudio.com"> info@devstudio.com</a></li>  
-        <li class="menu__nav-link"> <a href="tel:+380961111111"> +38 096 111 11 11</a></li>
+       <!-- Закрытие -->
+       <div class="menu-container js-menu-container" id="mobile-menu">
+       <button
+       class="menu-toggle js-open-menu"
+       aria-expanded="false"
+       aria-controls="mobile-menu">
+       <svg width="40" height="40">
+        <use href="./img/sprite.svg#icon-close-modal"> </use>
+       </svg>
+     </button>
+  
+     <ul class="menu">
+       <li><a href="#" class="menu__link">Студия</a></li>
+       <li><a href="#" class="menu__link">Портфолио</a></li>
+       <li><a href="#" class="menu__link">Контакты</a></li>
      </ul>
-
-     <ul class="menu__social-networks">
-        <li class="menu__items" aria-label="instagram">
-            <a href="#">instagram <span>|</span></a>
-        </li>
-        <li class="menu__items" aria-label="twitter">
-            <a href="#">twitter <span>|</span></a>
-        </li>
-        <li  class="menu__items" aria-label="facebook">
-            <a href="#">facebook <span>|</span></a>
-        </li>
-        <li class="menu__items" aria-label="linkedin">
-            <a href="#">linkedin</a>
-        </li>
-    </ul>
-</div>
-
-    <!-- Закрытие -->
-    <!-- <div class="menu-container js-menu-container" id="mobile-menu">
-    <button
-    class="menu-toggle js-open-menu"
-    aria-expanded="false"
-    aria-controls="mobile-menu">
-    <svg width="40" height="40">
-     <use href="./img/sprite.svg#icon-close-modal"> </use>
-    </svg>
-  </button>
-
-  <ul class="menu">
-    <li><a href="#" class="menu__link">Студия</a></li>
-    <li><a href="#" class="menu__link">Портфолио</a></li>
-    <li><a href="#" class="menu__link">Контакты</a></li>
-  </ul>
 
   <ul class="menu__nav">    
     <li class="menu__nav-link"> <a href="mailto:info@devstudio.com"> info@devstudio.com</a></li>  
@@ -120,8 +93,9 @@
         <a href="#">linkedin</a>
     </li>
 </ul>
-</div> -->
-  </header>
+</div>
+
+ </header>
 
 
      <main>

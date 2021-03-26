@@ -826,11 +826,39 @@ h3 {
 }
 
 /*Список карточек (Чем мы занимаемся")*/
+.card-set {
+  outline: solid springgreen;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .card-set {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .card-set {
     margin-left: calc(-1 * 30px);
     padding-bottom: 94px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set {
+    margin-left: calc(-1 * 30px);
+    padding-bottom: 94px;
+  }
+}
+
+.card-set__img {
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 
 .section-title {
@@ -843,6 +871,12 @@ h3 {
   line-height: 1.166;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .section-title {
+    display: none;
+  }
 }
 
 .section-list__subtitle {
@@ -882,7 +916,7 @@ h3 {
   left: 0;
   width: 100vw;
   height: 100vh;
-  z-index: 999;
+  z-index: 3;
   background-color: white;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);

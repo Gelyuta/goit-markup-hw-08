@@ -29,6 +29,7 @@
 }
     
 .section-list {
+
   @media screen and (min-width: $tablet){
     display: flex;
     flex-wrap: wrap;
@@ -69,26 +70,34 @@
 /*Список карточек (Чем мы занимаемся")*/
 
 .card-set {
-  // display: flex;
-  // flex-wrap: wrap;
+
+  @media (max-width: $desktop){
+    display: none;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
 
   @media screen and (min-width: $tablet){
     margin-left: calc(-1 * #{$value-margin});
     padding-bottom: 94px;
   }
 
-  // @media screen and (min-width: $desktop){
-  //   margin-left: calc(-1 * #{$value-margin});
-  //   padding-bottom: 94px;
-  // }
+  @media screen and (min-width: $desktop){
+    margin-left: calc(-1 * #{$value-margin});
+    padding-bottom: 94px;
+  }
 }
     
-// .card-set__img {
-//   flex-basis: calc(100% / 3 - #{$value-margin});
-//   margin-left: 30px;
-// }
+.card-set__img {
+  flex-basis: calc(100% / 3 - #{$value-margin});
+  margin-left: 30px;
+}
     
 .section-title {
+  @media (max-width: $desktop){
+    display: none;
+  }
   color: $text-black;
   margin-top: 0;
   margin-bottom: 50px;

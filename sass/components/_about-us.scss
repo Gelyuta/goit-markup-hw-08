@@ -1,43 +1,87 @@
 /*Список преимуществ*/
 .section-list__svg {
   background-color: $section-bcg; 
+  margin-bottom: 30px;
+
+  // @media screen and (max-width: 479px){
+  //   padding: 20px 110px;
+  //   width: 290px;
+  //   height: 120px;
+  // }
 
   @media screen and (max-width: $tablet){
-    outline: solid rgb(128, 0, 79);
     padding: 25px 190px;
     width: 450px;
     height: 120px;
+    
+  }    
+  @media screen and (min-width: $tablet){
+    padding: 25px 142px;
+    width: 354px;
+    height: 120px;
+  }
+  @media screen and (min-width: $desktop){
+    padding: 20px 100px;
     margin-bottom: 30px;
-  }     
+    width: 270px;
+    height: 120px;
+  }
 }
     
 .section-list {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  margin-left: calc(-1 * #{$value-margin});
-    
-  padding-top: 94px;
+  @media screen and (min-width: $tablet){
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * #{$value-margin});
+    padding-top: 94px;
+  }
 }
     
 .section-list__item {
-  flex-basis: calc(100% / 4 - #{$value-margin});
-  margin-left: $value-margin;
-  display: inline-block;
+
+  @media screen and (min-width: $tablet){
+    flex-basis: calc(100% / 2 - #{$value-margin});
+    margin-left: $value-margin;
+    display: inline-block;
+  } 
+  @media screen and (min-width: $desktop){
+    flex-basis: calc(100% / 4 - #{$value-margin});
+    margin-left: $value-margin;
+    display: inline-block;
+  }
+}
+
+.section-list__description {
+  color: $text-gray;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: $desktop){
+    margin-bottom: 30px;
+  }
 }
 
 /*Список карточек (Чем мы занимаемся")*/
 
 .card-set {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  margin-left: calc(-1 * #{$value-margin});
-  padding-bottom: 94px;
+  // display: flex;
+  // flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet){
+    margin-left: calc(-1 * #{$value-margin});
+    padding-bottom: 94px;
+  }
+
+  // @media screen and (min-width: $desktop){
+  //   margin-left: calc(-1 * #{$value-margin});
+  //   padding-bottom: 94px;
+  // }
 }
     
-.card-set__img {
-  flex-basis: calc(100% / 3 - #{$value-margin});
-  margin-left: 30px;
-}
+// .card-set__img {
+//   flex-basis: calc(100% / 3 - #{$value-margin});
+//   margin-left: 30px;
+// }
     
 .section-title {
   color: $text-black;
@@ -57,17 +101,6 @@
 
   @media (max-width: $tablet){
     text-align: center;
-  }
-}
-  
-.section-list__description {
-  // outline: solid blue;
-  color: $text-gray;
-  margin-top: 0;
-  margin-bottom: 0;
-
-  @media (max-width: $tablet){
-    margin-bottom: 30px;
   }
 }
     

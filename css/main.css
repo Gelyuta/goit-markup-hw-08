@@ -744,40 +744,82 @@ h3 {
 /*Список преимуществ*/
 .section-list__svg {
   background-color: #f5f4fa;
+  margin-bottom: 30px;
 }
 
 @media screen and (max-width: 768px) {
   .section-list__svg {
-    outline: solid #80004f;
     padding: 25px 190px;
     width: 450px;
     height: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-list__svg {
+    padding: 25px 142px;
+    width: 354px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-list__svg {
+    padding: 20px 100px;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+    padding-top: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-list__item {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-list__item {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+    display: inline-block;
+  }
+}
+
+.section-list__description {
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+  .section-list__description {
     margin-bottom: 30px;
   }
 }
 
-.section-list {
-  margin-left: calc(-1 * 30px);
-  padding-top: 94px;
-}
-
-.section-list__item {
-  -ms-flex-preferred-size: calc(100% / 4 - 30px);
-      flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  display: inline-block;
-}
-
 /*Список карточек (Чем мы занимаемся")*/
-.card-set {
-  margin-left: calc(-1 * 30px);
-  padding-bottom: 94px;
-}
-
-.card-set__img {
-  -ms-flex-preferred-size: calc(100% / 3 - 30px);
-      flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .card-set {
+    margin-left: calc(-1 * 30px);
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
@@ -803,18 +845,6 @@ h3 {
 @media (max-width: 768px) {
   .section-list__subtitle {
     text-align: center;
-  }
-}
-
-.section-list__description {
-  color: #757575;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-@media (max-width: 768px) {
-  .section-list__description {
-    margin-bottom: 30px;
   }
 }
 

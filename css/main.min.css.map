@@ -14,7 +14,8 @@
         "../sass/components/_clients.scss",
         "../sass/components/_portfolio.scss",
         "../sass/components/_footer.scss",
-        "../sass/components/_modal.scss"
+        "../sass/components/_modal.scss",
+        "../sass/components/_menu.scss"
     ],
     "names": [],
     "file": "main.min.css"

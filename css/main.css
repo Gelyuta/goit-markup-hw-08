@@ -741,6 +741,99 @@ h3 {
   }
 }
 
+/*Список преимуществ*/
+.section-list__svg {
+  background-color: #f5f4fa;
+}
+
+@media screen and (max-width: 768px) {
+  .section-list__svg {
+    outline: solid #80004f;
+    padding: 25px 190px;
+    width: 450px;
+    height: 120px;
+    margin-bottom: 30px;
+  }
+}
+
+.section-list {
+  margin-left: calc(-1 * 30px);
+  padding-top: 94px;
+}
+
+.section-list__item {
+  -ms-flex-preferred-size: calc(100% / 4 - 30px);
+      flex-basis: calc(100% / 4 - 30px);
+  margin-left: 30px;
+  display: inline-block;
+}
+
+/*Список карточек (Чем мы занимаемся")*/
+.card-set {
+  margin-left: calc(-1 * 30px);
+  padding-bottom: 94px;
+}
+
+.card-set__img {
+  -ms-flex-preferred-size: calc(100% / 3 - 30px);
+      flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+}
+
+.section-title {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.section-list__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+@media (max-width: 768px) {
+  .section-list__subtitle {
+    text-align: center;
+  }
+}
+
+.section-list__description {
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .section-list__description {
+    margin-bottom: 30px;
+  }
+}
+
+.card-set__img {
+  position: relative;
+}
+
+.card-set__title {
+  margin: 0;
+  text-align: center;
+  color: white;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 100%;
+}
+
 .menu-container {
   position: fixed;
   padding-left: 40px;

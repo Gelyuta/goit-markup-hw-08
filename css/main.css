@@ -745,7 +745,7 @@ h3 {
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  background-color: tomato;
+  background-color: white;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   -webkit-transition: -webkit-transform 250ms ease-in-out;

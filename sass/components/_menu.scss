@@ -6,7 +6,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 999;
-  background-color: tomato;
+  background-color: $bcg-white;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -30,13 +30,14 @@
   border: none;
   border-radius: 50%;
   outline: none;
-
-  @media (min-width: $tablet) {
+}
+  
+@media (min-width: 768px) {
+  .menu-toggle {
     display: none;
   }
 }
   
-
 .menu-toggle:hover,
 .menu-toggle:focus {
   fill: $btn-blue;

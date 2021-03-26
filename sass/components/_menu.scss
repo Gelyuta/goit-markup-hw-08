@@ -49,12 +49,93 @@
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 10px;
-  right: 15px;
 }
 
 .mobile-menu {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+.menu__link{
+  display: inline-block;
+      
+  color: $text-dark-gray;
+  
+  @include text(500, 40px, 1.175, 0.02em);
+        
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus, {
+    color: $text-blue;
+    outline: none;
+  }
+}
+
+.menu__link--current { 
+  color: $text-blue;
+}
+
+
+.menu__unit{
+  &:first-child{
+    padding-top: 48px;
+  }
+
+  &:not(:last-child){
+    padding-bottom: 32px;
+  }
+}
+
+
+.menu__nav{
+  display: inline-block;
+
+  &-mail{
+    @include text(500, 24px, 1.166, 0.02em);
+    color: $text-gray;
+    margin-bottom: 64px;
+  }
+
+  &-tel{
+    margin-bottom: 32px;
+    @include text(500, 34px, 1.176, 0.02em);
+    color: $text-blue;
+  }
+}
+
+.menu__social-networks{
+  display: flex;
+}
+
+.menu__items-link{
+  @include text(500, 18px, 1.222, 0.02em);
+  color: $text-blue;
+}
+
+// .menu__items-border{
+//   min-height: 22px;
+//   color: $border-input;
+//   margin-left: 10px;
+//   margin-right: 10px;
+// }
+
+.menu__items:not(:first-child){
+  border-left: solid 1px $border-input;
+  height: 22px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.menu__items:first-child {
+  padding-right: 10px;
+}
+
+.menu-list{
+  
+  height: 796px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

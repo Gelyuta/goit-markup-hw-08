@@ -18,46 +18,74 @@
   background-position: center;
   background-size: cover;
 
-  background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
-  );
   
   @media screen and (max-width: $tablet){
-    max-width: 480px;
-    min-height: 400px;
-    background-image: url(/img/hero-mobile_img.jpg);
+    width: 100vw;
+    max-height: 400px;
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+
+      url(/img/hero-mobile_img.jpg);
     
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/img/hero-mobile_img@2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/img/hero-mobile_img@2x.jpg);
     }
   }
 
   @media screen and (min-width: $tablet){
     max-width: 768px;
     max-height: 400px;
-    background-image: url(/img/hero-tablet_img.jpg);
+
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+
+      url(/img/hero-tablet_img.jpg);
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/img/hero-tablet_img@2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/img/hero-tablet_img@2x.jpg);
     }
   }
   
   @media screen and (min-width: $desktop){
     max-width: 1600px;
     min-height: 600px;
-    background-image: url(/img/hero-decktop.jpg);
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+      url(/img/hero-decktop.jpg);
     background-size: 1600px 600px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(/img/hero-decktop_Img@2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(/img/hero-decktop_Img@2x.jpg);
     }
   }
 }

@@ -862,7 +862,7 @@ h3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .menu__items-link {

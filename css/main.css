@@ -742,7 +742,7 @@ h3 {
 
 /*Список преимуществ*/
 .section-list__svg {
-  background-color: red;
+  background-color: #f5f4fa;
   margin-bottom: 30px;
   max-height: 120px;
   padding: 25px 125px;
@@ -908,7 +908,7 @@ h3 {
 }
 
 .section-team__bcg {
-  background-color: #662fff;
+  background-color: #f5f4fa;
 }
 
 .section-team__img-thumb {

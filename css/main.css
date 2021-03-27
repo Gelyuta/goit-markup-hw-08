@@ -742,10 +742,10 @@ h3 {
 
 /*Список преимуществ*/
 .section-list__svg {
-  background-color: #f5f4fa;
+  background-color: red;
   margin-bottom: 30px;
   max-height: 120px;
-  padding: 25px 110px;
+  padding: 25px 125px;
   max-width: 320px;
 }
 

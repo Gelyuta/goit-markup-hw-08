@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Веб-студия</title>
     <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -29,7 +29,7 @@
             
             <li class="auth-nav__item">
                 <a class="auth-nav__link auth-nav__link--first auth-nav__svg" href="mailto:info@devstudio.com">
-                    <svg class="auth-nav__icon auth-nav__icon--mail">
+                    <svg class="auth-nav__icon auth-nav__icon--mail" width="16px" height="12px">
                         <use href="./img/sprite.svg#icon-envelope-h"></use>
                     </svg>
                     info@devstudio.com</a>
@@ -43,78 +43,15 @@
                     +38 096 111 11 11</a>
                 </li>
        </ul>
-       <!-- Открытие бургер-меню-->
-       <button
-       class="menu-toggle js-open-menu"
-       aria-expanded="false"
-       aria-controls="mobile-menu">
-       <svg width="40" height="40">
-        <use href="./img/sprite.svg#icon-menu"> </use>
-       </svg>
-      </button>
         </div>
-
-       <!-- Закрытие  бургер-меню-->
-       <div class="menu-container js-menu-container" id="mobile-menu">
-       <button
-       class="menu-toggle js-close-menu"
-       aria-expanded="false"
-       aria-controls="mobile-menu">
-       <svg width="40" height="40">
-        <use href="./img/sprite.svg#icon-close-modal"> </use>
-       </svg>
-     </button>
-
-       <!-- Меню -->
-       <div class="menu-list">
-     <ul class="menu">
-       <li class="menu__unit">
-           <a href="./index.html" class="menu__link  menu__link--current">Студия</a>
-        </li>
-       <li class="menu__unit">
-           <a href="./portfolio.html" class="menu__link">Портфолио</a>
-        </li>
-       <li class="menu__unit">
-           <a href="#" class="menu__link">Контакты</a>
-        </li>
-     </ul>
-
-     <div>
-  <ul class="menu__nav">    
-    <li class="menu__nav-link">
-        <a class="menu__nav-tel" href="tel:+380961111111">+38 096 111 11 11</a>
-    </li>
-    <li class="menu__nav-link">
-        <a class="menu__nav-mail" href="mailto:info@devstudio.com"> info@devstudio.com</a></li>  
     
- </ul>
-
- <ul class="menu__social-networks">
-    <li class="menu__items" aria-label="instagram">
-        <a class="menu__items-link" href="#">Instagram</a>
-    </li>
-    <li class="menu__items" aria-label="twitter">
-        <a class="menu__items-link" href="#">Twitter</a>
-    </li>
-    <li  class="menu__items" aria-label="facebook"> 
-        <a class="menu__items-link" href="#">Facebook</a>
-    </li>
-    <li class="menu__items" aria-label="linkedin">
-        <a class="menu__items-link" href="#">Linkedin</a>
-    </li>
-</ul>
-</div>
-</div>
-</div>
-
- </header>
-
+     </header>
 
      <main>
 
-        <!--Герой-->
-        <section class="hero__bcg">
-        <div class="container hero ">
+       <!--Герой-->
+       <section class="hero__bcg">
+        <div class="container hero">
        
             <h1 class="hero__title">Эффективные решения <br>для вашего бизнеса</h1>
             <button  class="hero__btn" data-modal-open>Заказать услугу</button>
@@ -127,51 +64,54 @@
 
          <ul class="section-list">
              <li class="section-list__item">
-                 <a href="#">
-                 <svg class="section-list__svg">
+                     <div class="section-list__svg">
+                 <svg>
                     <use href="./img/sprite.svg#icon-antenna" width="70px" height="70px"></use>
                 </svg>
-                </a>
+            </div>
+                
                 
                  <h3 class="section-list__subtitle">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
                  <p class="section-list__description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
              </li>
 
              <li class="section-list__item" >
-                 <a href="#">
-                <svg class="section-list__svg">
+                <div class="section-list__svg">
+                <svg>
                     <use href="./img/sprite.svg#icon-clock" width="70px" height="70px"></use>
                 </svg>
-                </a>
+                </div>
+            
                
                  <h3 class="section-list__subtitle">ПУНКТУАЛЬНОСТЬ</h3>
                  <p class="section-list__description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
              </li>
 
              <li class="section-list__item">
-                 <a href="#">
-                <svg class="section-list__svg">
+                <div class="section-list__svg">
+                <svg>
                     <use href="./img/sprite.svg#icon-diagram" width="70px" height="70px"></use>
                 </svg>
-                </a>
+               </div>
                 
                  <h3 class="section-list__subtitle">ПЛАНИРОВАНИЕ</h3>
                  <p class="section-list__description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
              </li>
              
              <li class="section-list__item"> 
-                 <a href="#">
-                <svg class="section-list__svg">
+                <div class="section-list__svg">
+                <svg>
                     <use href="./img/sprite.svg#icon-astronaut" width="70px" height="70px"></use>
                 </svg>
-                </a>
+                </div>
+    
                
                  <h3 class="section-list__subtitle">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
                  <p class="section-list__description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
              </li>
          </ul>
         
-         <h2  class="section-title section-title--hidden">Чем мы занимаемся</h2>
+         <h2  class="section-title">Чем мы занимаемся</h2>
          <ul class="card-set">
 
              <li class="card-set__img">
@@ -203,9 +143,7 @@
                   <li class="section-team__card">
                  
                     <div class="section-team__img-thumb">
-                    <img src="./img/igor_img.jpg" 
-                    srcset="./img/igor_img.jpg 1x, ./img/igor_img@2x.jpg 2x" 
-                    alt="photo">
+                    <img src="./img/photo-1.jpg"  alt="photo" width="270">
                     </div>
 
                       <div class="section-team__card-content">
@@ -252,8 +190,7 @@
 
             <li class="section-team__card">
                 <div class="section-team__img-thumb">
-                <img src="./img/photo-2.jpg" srcset="./img/olga_img.jpg 1x, ./img/olga_img@2x.jpg 2x" alt="photo">
-                
+                <img src="./img/photo-2.jpg" alt="photo" width="270">
                 </div>
 
                 <div class="section-team__card-content">
@@ -298,7 +235,7 @@
 
             <li class="section-team__card">
                 <div class="section-team__img-thumb">
-                <img src="./img/nikolay_img.jpg" srcset="./img/nikolay_img.jpg 1x, ./img/nikolay_img@2x.jpg 2x" alt="photo">
+                <img src="./img/photo-3.jpg" alt="photo" width="270">
                 </div>
 
                 <div class="section-team__card-content">
@@ -343,7 +280,7 @@
 
             <li class="section-team__card">
                 <div class="section-team__img-thumb">
-                <img src="./img/mihail_img.jpg" srcset="./img/mihail_img.jpg, ./img/mihail_img@2x.jpg 2x" alt="photo">
+                <img src="./img/photo-4.jpg" alt="photo" width="270">
                 </div>
 
                 <div class="section-team__card-content">
@@ -601,13 +538,6 @@
         </div>
     </footer>
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
 </body>
 </html>
 

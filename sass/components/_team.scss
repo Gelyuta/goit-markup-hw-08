@@ -1,142 +1,103 @@
-.section-team_card-set {
+// .section-team_card-set {
+//   margin: 0;
+//   display: flex;
+//   flex-wrap: wrap;
+//   padding-bottom: 94px;
+    
+//   margin-left: calc(-1 * #{$indent-card});
+// }
 
-  margin: 0;
-  // padding-bottom: 94px;
-  @media screen and (min-width:  $tablet){
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: calc(-1 * #{$indent-card});
-  }
-}
-
-.section-team__bcg {
-  background-color: $section-bcg;
-}
+// .section-team__bcg {
+//   background-color: $section-bcg;
+// }
 
     
 
-.section-team__img-thumb {
-  display: block;
-  width: 100%;
-  @media screen and (min-width: 320px){
-    max-height: 460px;
-  }
+// .section-team__img-thumb {
+//   margin-bottom: 30px;
+// }
 
-  @media screen and (max-width:  $tablet){
-    max-height: 460px;
-  }
+// .section-team__card-content {
+//   text-align: center;
+//   padding-left: 32px;
+//   padding-right: 32px;   
+// }
 
-  @media screen and (min-width:  $tablet){
-    height: 354px;
-  }
-
-  @media screen and (min-width: $desktop){
-    height: 260px;
-  }
-}
-
-.section-team__card-content {
-  outline: solid blue;
-  text-align: center;
-  padding-left: 32px;
-  padding-right: 32px;   
-}
-
-.section-team_member {
-  color: $text-black;
-  margin-top: 0;
-  margin-bottom: 10px;
+// .section-team_member {
+//   color: $text-black;
+//   margin-top: 0;
+//   margin-bottom: 10px;
     
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-}
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.875;
+//   letter-spacing: 0.03em;
+// }
     
-.section-team_profession {
-  display: block;
+// .section-team_profession {
+//   display: block;
   
-  color: $text-gray;
-  margin-top: 0;
-  margin-bottom: 16px;
+//   color: $text-gray;
+//   margin-top: 0;
+//   margin-bottom: 16px;
     
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
-}
+//   font-weight: normal;
+//   font-size: 16px;
+//   line-height: 1.875;
+//   letter-spacing: 0.03em;
+// }
     
     
-.section-team__card {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background: $bcg-white;
-
-
-  @media screen and (min-width:  $tablet){
-    flex-basis: calc(100% / 2 - #{$indent-card});
-    margin-left: $indent-card;
-  }
-  @media screen and (min-width: $desktop){
-    flex-basis: calc(100% / 4 - #{$indent-card});
-    margin-left: $indent-card;
-  }
-}
-
+// .section-team__card {
+//   flex-basis: calc(100% / 4 - #{$indent-card});
+//   margin-left: $indent-card;
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   background: $bcg-white;
+    
+//   border-radius: 0px 0px 4px 4px;
+// }
   
-/*Список социальных сетей*/
-
-.social-networks__list {
-  padding-bottom: 30px;
-  margin: auto;
-  list-style: none;
-  display: flex;
-  @media screen and (min-width: 320px){
-    width: 206px; 
-  }
-}
+// /*Список социальных сетей*/
+// .social-networks__list {
+//   padding-bottom: 30px;
+//   margin: auto;
+//   list-style: none;
+//   display: flex;
+// }
     
-.social-networks__items {
-  display: block;
-  margin: auto;
-}
+// .social-networks__items {
+//   display: block;
+//   margin: auto;
+// }
     
-.social-networks__contacts {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-  color: $border-logo;
-  outline: none;
+// .social-networks__contacts {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 44px;
+//   height: 44px;
+//   color: $border-logo;
+//   outline: none;
       
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
       
-  &:hover,
-  &:focus {
-    background-color: $btn-blue;
-    color: $text-white;
-    border-radius: 50%;
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: $btn-blue;
+//     color: $text-white;
+//     border-radius: 50%;
+//   }
+// }
    
-.social-networks__icon {
-  fill: currentColor;
+// .social-networks__icon {
+//   fill: currentColor;
 
-  &:hover,
-  &:focus {
-    fill: $text-white;
-  } 
+//   &:hover,
+//   &:focus {
+//     fill: $text-white;
+//   } 
 
-  .section-title {
-    @include text (700, 36px, 1.166, 0.03em);
-    color: $text-black;
-    margin-top: 0;
-    margin-bottom: 50px;
-    padding-top: 94px; 
-    text-align: center;
-  }
-}
+// }
 
     

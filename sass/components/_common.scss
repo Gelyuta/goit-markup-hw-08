@@ -9,24 +9,25 @@ html {
 }
     
 .container {
+  // background-color : rgb(0, 238, 255) ;
   min-width: 320px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  // background-color: rgb(204, 228, 221);
 
- 
+  
   @media screen and (min-width: $mobile) {
-    width: $mobile;
+    max-width: 480px;
   }
-
+ 
   @media screen and (min-width: $tablet) {
-    width: $tablet;
+    max-width: 768px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: $desktop;
+    max-width: 1200px;
   }
 }
 
@@ -76,7 +77,6 @@ p {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
   
 h3 {
@@ -84,5 +84,4 @@ h3 {
   margin-top: 0;
   margin-bottom: 10px;
 }
-
   

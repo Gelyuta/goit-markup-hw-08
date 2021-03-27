@@ -1,13 +1,20 @@
 /*Список преимуществ*/
 .section-list__svg {
+
   background-color: $section-bcg; 
   margin-bottom: 30px;
 
-  // @media screen and (max-width: 479px){
-  //   padding: 20px 110px;
-  //   width: 290px;
-  //   height: 120px;
-  // }
+  @media screen and (min-width: 320px){
+    padding: 20px 110px;
+    width: 290px;
+    height: 120px;
+  }
+
+  @media screen and (max-width: 379px){
+    padding: 20px 110px;
+    width: 290px;
+    height: 120px;
+  }
 
   @media screen and (max-width: $tablet){
     padding: 25px 190px;
@@ -95,17 +102,11 @@
 }
     
 .section-title {
-  @media (max-width: $desktop){
-    display: none;
-  }
+  @include text (700, 36px, 1.166, 0.03em);
   color: $text-black;
   margin-top: 0;
   margin-bottom: 50px;
   padding-top: 94px; 
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
   text-align: center;
 }
     

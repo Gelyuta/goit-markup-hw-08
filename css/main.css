@@ -747,6 +747,22 @@ h3 {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 320px) {
+  .section-list__svg {
+    padding: 20px 110px;
+    width: 290px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 379px) {
+  .section-list__svg {
+    padding: 20px 110px;
+    width: 290px;
+    height: 120px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .section-list__svg {
     padding: 25px 190px;
@@ -827,7 +843,6 @@ h3 {
 
 /*Список карточек (Чем мы занимаемся")*/
 .card-set {
-  outline: solid springgreen;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -862,21 +877,15 @@ h3 {
 }
 
 .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
   color: black;
   margin-top: 0;
   margin-bottom: 50px;
   padding-top: 94px;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.166;
-  letter-spacing: 0.03em;
   text-align: center;
-}
-
-@media (max-width: 1200px) {
-  .section-title {
-    display: none;
-  }
 }
 
 .section-list__subtitle {
@@ -907,6 +916,170 @@ h3 {
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
   width: 100%;
+}
+
+.section-team_card-set {
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section-team_card-set {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: calc(-1 * 30px);
+  }
+}
+
+.section-team__bcg {
+  background-color: #f5f4fa;
+}
+
+.section-team__img-thumb {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) {
+  .section-team__img-thumb {
+    max-height: 460px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-team__img-thumb {
+    max-height: 460px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-team__img-thumb {
+    height: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team__img-thumb {
+    height: 260px;
+  }
+}
+
+.section-team__card-content {
+  outline: solid blue;
+  text-align: center;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.section-team_member {
+  color: black;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
+
+.section-team_profession {
+  display: block;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
+
+.section-team__card {
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: white;
+}
+
+@media screen and (min-width: 768px) {
+  .section-team__card {
+    -ms-flex-preferred-size: calc(100% / 2 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-team__card {
+    -ms-flex-preferred-size: calc(100% / 4 - 30px);
+        flex-basis: calc(100% / 4 - 30px);
+    margin-left: 30px;
+  }
+}
+
+/*Список социальных сетей*/
+.social-networks__list {
+  padding-bottom: 30px;
+  margin: auto;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 320px) {
+  .social-networks__list {
+    width: 206px;
+  }
+}
+
+.social-networks__items {
+  display: block;
+  margin: auto;
+}
+
+.social-networks__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  outline: none;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-networks__contacts:hover, .social-networks__contacts:focus {
+  background-color: #2196f3;
+  color: white;
+  border-radius: 50%;
+}
+
+.social-networks__icon {
+  fill: currentColor;
+}
+
+.social-networks__icon:hover, .social-networks__icon:focus {
+  fill: white;
+}
+
+.social-networks__icon .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  letter-spacing: 0.03em;
+  color: black;
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 94px;
+  text-align: center;
 }
 
 .menu-container {

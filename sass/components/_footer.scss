@@ -57,6 +57,9 @@
       
   @media screen and (min-width: $desktop){
     @include logo(700, 26px, 1.192, .03em);
+    margin: 0;
+    justify-content: left;
+
   }
 }
 

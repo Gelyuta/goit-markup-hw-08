@@ -1543,6 +1543,10 @@ h3 {
     font-size: 26px;
     line-height: 1.192;
     letter-spacing: 0.03em;
+    margin: 0;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 

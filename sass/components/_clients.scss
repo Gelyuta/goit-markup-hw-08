@@ -1,54 +1,76 @@
-// .section-title__clients{
-//   padding-top: 0;
-//   color: $text-black;
-//   margin-top: 0;
-//   margin-bottom: 50px; 
-//   font-weight: bold;
-//   font-size: 36px;
-//   line-height: 1.166;
-//   letter-spacing: 0.03em;
-//   text-align: center;
-// }
+.section-title__clients{
+  @include text (700, 36px, 1.166, 0.03em);
+  color: $text-black;
+  margin-top: 0; 
+  text-align: center;
   
-// .section__clients  {
-//   padding-top: 65px;
-// }
-  
-// .clients__cards:not(:first-child) {
-//   margin-left: 30px;
-// }
+  @media screen and (max-width: 1199px){
+    margin-bottom: 30px;
+    padding-top: 60px; 
+  }
+  @media screen and (min-width: $desktop){
+    margin-bottom: 50px;
+    padding-top: 94px; 
+    @include text (700, 36px, 1.178, 0.03em);
+  }
+}
   
   
-// .clients__card-set {
-//   padding-bottom: 94px;
-//   margin: 0;
-//   list-style: none;
-//   display: flex;
-// }
+.clients__card-set {
+  display: flex;
+  flex-wrap: wrap;
+
+  padding: 0;
+  margin: 0;
+  margin-top: calc(-1 * #{$value-margin});
+  margin-left: calc(-1 * #{$value-margin});
+}
     
-// .clients__links {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 170px;
-//   height: 90px;
-//   box-sizing: border-box;
-//   fill: $border-logo;
-//   border: solid 1px $border-logo;
-//   border-radius: 4px;
-//   outline: none;
-//   cursor: grab;
-    
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.clients__cards{
+  flex-basis: calc((100% - 60px) / 2);
+  margin-left: $value-margin;
+  margin-top: $value-margin;
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 180px) / 6);
+    margin-top: 0;
+  }
+}
+
+.clients__links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  fill: $border-logo;
+  border: solid 1px $border-logo;
+  border-radius: 4px;
+  outline: none;
+  cursor: grab;
+  
+  @media screen and (min-width: $tablet){
+    max-width: 226px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 270px;
+  }
+
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
      
-//   &:hover,
-//   &:focus {
-//     fill: $btn-blue;
-//     border: solid 1px $btn-blue;
-//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//       0px 2px 2px rgba(0, 0, 0, 0.12);
-//   }
-// }
+  &:hover,
+  &:focus {
+    fill: $btn-blue;
+    border: solid 1px $btn-blue;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
 
     
 

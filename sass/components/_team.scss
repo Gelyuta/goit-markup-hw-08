@@ -11,6 +11,7 @@
   @media screen and (min-width: $desktop){
     margin-bottom: 50px;
     padding-top: 94px; 
+    @include text (700, 36px, 1.178, 0.03em);
   }
 }
 

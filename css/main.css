@@ -1492,7 +1492,6 @@ h3 {
 }
 
 .footer__container {
-  outline: solid red;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

@@ -143,9 +143,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 60px;
 
   @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
+    
     margin-left: auto;
     margin-right: auto;
   }
@@ -159,6 +160,7 @@
   display: flex;
   align-items: center;
   max-width: 206px;
+
 }
   
 .footer__links {

@@ -19,6 +19,7 @@
 }
     
 .footer__contacts {
+  
   display: inline-block;
   @media screen and (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
@@ -32,6 +33,7 @@
 }
 
 .footer__container {
+  outline: solid red;
   display: flex;
 
   padding-top: 60px;
@@ -43,7 +45,6 @@
   }
   @media screen and (min-width: $desktop) {
     align-items: baseline;
-    padding-bottom: 60px;
   }
 }
   
@@ -191,10 +192,6 @@
 .footer__form-group {
   display: flex;
   flex-direction: column;
-  
-  @media screen and (max-width: 767px) {
-    margin-bottom: 60px;
-  }
   
   @media screen and (min-width: $desktop) {
     margin-left: 93px;

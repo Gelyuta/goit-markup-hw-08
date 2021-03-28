@@ -1647,7 +1647,6 @@ h3 {
 }
 
 .footer__social-links {
-  outline: solid #3d11a5;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

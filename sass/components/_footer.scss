@@ -12,12 +12,22 @@
 // }
     
 // .logo {
-//   @include logo;
-  
+//   @media screen and (max-width: 1199px){
+//     @include logo(700, 24px, 1.166, .03em);
+//     display: block;
+//     padding: 16px 0;
+//   }
+      
+//   @media screen and (min-width: $desktop){
+//         @include logo(700, 26px, 1.192, .03em);
+//         display: block;
+//   }
+
 //   .logo--footer & {
 //     padding-bottom: 20px;
 //   }
 // }
+
   
 // .footer__title {
 //   display: inline-block;

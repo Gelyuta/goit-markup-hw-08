@@ -20,10 +20,14 @@
   display: flex;
   flex-wrap: wrap;
 
-  padding: 0;
+  padding-bottom: 60px;
   margin: 0;
   margin-top: calc(-1 * #{$value-margin});
   margin-left: calc(-1 * #{$value-margin});
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 94px;
+  }
 }
     
 .clients__cards{

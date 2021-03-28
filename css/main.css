@@ -644,6 +644,8 @@ h3 {
 }
 
 .hero__bcg {
+  max-width: 1600px;
+  max-height: 600px;
   margin: 0 auto;
   background-color: #2f303a;
   background-repeat: no-repeat;
@@ -688,7 +690,6 @@ h3 {
     max-height: 600px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../img/hero-decktop.jpg);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./../img/hero-decktop.jpg);
-    background-size: 1600px 600px;
   }
 }
 

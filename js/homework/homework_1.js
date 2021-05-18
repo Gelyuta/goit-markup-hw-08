@@ -9,7 +9,7 @@
 // let pricePerItem = 2000;
 
 // productName = 'Repair droid';
-// pricePerItem = 3500;
+// pricePerItem = 2000 + 1500;
 
 // //Задача 3//
 
@@ -27,7 +27,7 @@
 // const totalPrice = pricePerItem * orderedQuantity;
 
 
-// //Задача 5//
+//Задача 5//
 
 // const productName = 'Дроид';
 // const pricePerItem = 3500;

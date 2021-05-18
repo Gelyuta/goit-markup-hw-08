@@ -16,42 +16,44 @@
 // d. Классика, Рок-н-ролл
 // e.Рэп, Регги, Классика, Рок - н - ролл;
 
-// const styles = ["Джаз", "Блюз"];
 
-// styles.push("Рок-н-ролл");
+const styles = ["Джаз", "Блюз"];
 
-// console.log(styles);
+styles.push("Рок-н-ролл");
 
-// styles.splice(1, 1, "Классика");
+console.log(styles);
 
-// console.log(styles);
+styles.splice(1, 1, "Классика");
 
-// const deletedElem = styles.shift();
+console.log(styles);
 
-// console.log(deletedElem);
+styles.shift();
 
-// console.log(styles);
+const deletedElem = styles.shift();
 
-// styles.unshift("Рэп", "Регги");
+console.log(styles);
+console.log(deletedElem);
 
-// console.log(styles);
+styles.unshift("Рэп", "Регги");
+
+console.log(styles);
 
 // --------------------
+
 
 // Задача 2
 
 // Напишите функцию min(a,b), которая возвращает
 // меньшее из чисел a и b.
 
-// function min(a, b) {
-//   if (typeof a !== "number" || typeof b !== "number") {
-//     return "Аргументы должны быть цифрами!";
-//   }
+function min(a,b){
+  if (typeof a !== "number" || typeof b !== "number") {
+    return "Аргументы должны быть цифрами";
+  };
+return a > b ? b : a;
+};
 
-//   return a > b ? b : a;
-// }
-
-// console.log(min(10, 7));
+console.log(min(10, 8))
 
 // --------------------
 
@@ -68,41 +70,45 @@
 // ['Mango', 'Poly', 'Ajax'] с индексом
 // 0 будет выведено 1 - Mango, а для индекса 2 выведет 3 - Ajax.
 
-// const arr = ["Mango", "Poly", "Ajax"];
+const array = ['Mango', 'Poly', 'Ajax']; 
 
-// function logItems(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     console.log(`${i + 1} - ${arr[i]}`);
-//   }
-// }
+function logItems(array) {
+  for (let i= 0; i < array.length; i++) {
 
-// logItems(arr);
+  console.log(`${i + 1} - ${array[i]}`);
+
+  };
+};
+
+logItems(array);
 
 // --------------------
 
-// Задача 4
+// Задача 4 (bubbleSort)
 
 // Вернуть отсортированную копию по алфавиту
 // (не меняя исходный массив)
 // не использовать Array.prototype.sort()
 
-const ex4 = [2, 1, 65];
+const ex4 = [2, 1, 65, 89, 20, 67, 901, 478];
 
-// function bubbleSort(arr) {
-//   for (let i = 0; i < arr.length; i++) {
-//     for (let j = 0; j < arr.length; j++) {
-//       if (arr[j] > arr[j + 1]) {
-//         let tmp = arr[j];
-//         arr[j] = arr[j + 1];
-//         arr[j + 1] = tmp;
-//       }
-//     }
-//   }
+function bubbleSort(arr) {
+  for (let i= 0; i < arr.length; i++) {
+    // console.log("1", i);
+    for ( let j= 0; j < arr.length; j++) {
+      // console.log("2", j);
+       if(arr[j] > arr[j + 1]) {
+          let tmp = arr[j]
+          arr[j] = arr[j + 1];
+          arr[j + 1] = tmp;
+           };
+         };
+      };
 
-//   return arr;
-// }
+      return arr
+   };
 
-// console.log(bubbleSort(ex4));
+   console.log(bubbleSort(ex4))
 
 // --------------------
 
@@ -116,18 +122,21 @@ const ex4 = [2, 1, 65];
 const ex5 = [104, 67, 54, 89, 2, 19];
 
 function findSmallestNumber(numbers) {
+// if (typeof numbers !== "array"){
+//   return    д/з как можно ввалидировать массив это не работает.
+// }
+
   let min = numbers[0];
 
   for (const number of numbers) {
-    if (min > number) {
+    if(min > number) {
       min = number;
     }
   }
-
-  return min;
+  return min 
 }
 
-// console.log(findSmallestNumber(ex5));
+console.log(findSmallestNumber(ex5));
 
 // --------------------
 
@@ -148,15 +157,15 @@ function calculateAverage() {
       continue;
     } else {
       sum += arg;
-      totalCount++;
-      // totalCount += 1;
+      totalCount++; //+=1
     }
   }
-
-  return sum / totalCount;
+  return sum / totalCount
 }
 
-// console.log(calculateAverage(2, 5, 10, "asdhvghasd", [3, 3, 2]));
+
+console.log(calculateAverage(2, 5, 6, 8, 9, 10))
+
 
 // --------------------
 
@@ -170,26 +179,26 @@ function calculateAverage() {
 // пробелом (параметр string)
 // и возвращает самое длинное слово в этой строке.
 
-// ДЗ - добавить проверку, когда все слова ровны
+// ДЗ - добавить проверку, когда все слова равны
 
 function findLongestWord(randomWords) {
-  if (typeof randomWords !== "string") {
-    return;
+if (typeof randomWords !== "string"){
+  return
+}
+const splittedWords = randomWords.split(" ");
+let longestWord = splittedWords[0];
+
+for (const word of splittedWords) {
+  if(longestWord.length < word.length){
+    longestWord = word
   }
-
-  const splittedWords = randomWords.split(" ");
-  let longestWord = splittedWords[0];
-
-  for (const word of splittedWords) {
-    if (longestWord.length < word.length) {
-      longestWord = word;
-    }
-  }
-
-  return longestWord;
+}
+return longestWord
+// console.log(splittedWords);
 }
 
-// console.log(findLongestWord("Я хочу стать програмистом"));
+console.log(findLongestWord("я хочу стать программистом"))
+
 
 // ----------------------
 
@@ -208,7 +217,7 @@ function greet(name) {
   return name ? `Привет ${name}` : "Привет, гость";
 }
 
-// console.log(greet(""));
+console.log(greet("Василий"));
 
 // ----------------------
 
@@ -231,14 +240,14 @@ function findTheColor(colorName) {
   return colors.includes(colorName);
 }
 
-// console.log(findTheColor("yellow"));
+console.log(findTheColor("yellow"));
 
 // ----------------------
 
 // Задача 10
 
 // Выполните рефакторинг заменив объявление
-// функции на стрелочную функцию.
+// функции на стрелочную функцию. (+ тернарник)
 
 // function checkNumbers(a, b) {
 //   if (a > b) {
@@ -263,9 +272,11 @@ const checkNumbers = (a, b) => {
 //   return x * y * z;
 // }
 
-const mult = (x, y, z) => x * y * z;
+const mult = (x, y, z) => (x * y * z);  // можно без скобок,можно без ретерн
 
-// ----------------------
+console.log(mult(2, 4, 2))
+
+// -------------------------
 
 // Задача 12
 
@@ -281,6 +292,7 @@ const courses = ["HTML", "CSS", "JavaScript", "React"];
 const addCourse = name => courses.push(name);
 
 addCourse("C++");
+console.log(courses)
 
 const removeCourse = name => {
   const index = courses.indexOf(name);
@@ -293,6 +305,7 @@ const removeCourse = name => {
 };
 
 removeCourse("CSS");
+console.log(courses)
 
 const updateCourse = (oldName, newName) => {
   const index = courses.indexOf(oldName);
@@ -306,4 +319,4 @@ const updateCourse = (oldName, newName) => {
 
 updateCourse("HTML", "Python");
 
-// console.log(courses);
+console.log(courses);
